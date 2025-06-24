@@ -1,0 +1,140 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cab2fb;
+}
+
+#container
+{
+    height: 95vh;
+    background-color: #cab2fb;
+    padding: 20px 30px 30px 20px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#icon-top
+{
+    height: 20%;
+    background: radial-gradient(circle at center, #9656ce 0%, #cab2fb 100%);
+}
+
+#main
+{
+    height: 70%;
+    background: radial-gradient( ellipse at center, #7e61ab 0%, #ab84e6 50%, #cab2fb 100%);
+    margin-top: 20px;
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+#icon-top
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 7vh;
+}
+
+#bottom
+{
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot
+{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    background-color: #5b209a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: ease-out 500ms;
+}
+
+.dot:hover, .active
+{
+    background-color: rgb(142, 53, 238);
+    transition: ease-in 150ms;
+}
+
+.mySlides
+{
+    display: none;
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: ease-out 500ms;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 5px;
+}
+
+.prev
+{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 5px;
+}
+
+.next:hover, .prev:hover
+{
+    background-color: #9656ce;
+    transition: ease 250ms;
+}
+
+.numberText
+{
+    color: gray;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
